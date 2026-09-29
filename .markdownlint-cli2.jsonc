@@ -1,0 +1,12 @@
+{
+  // Shared by CI and by local runs of "npx markdownlint-cli2" with no arguments.
+  "config": {
+    "default": true,
+    // Line length is not enforced: prose is not hard-wrapped.
+    "MD013": false
+  },
+  // Appended to the command line, so a no-argument run lints every Markdown file.
+  "globs": ["**/*.md"],
+  // Node.js dependencies installed inside project directories (node_modules) are never linted.
+  "ignores": ["**/node_modules/**"]
+}

@@ -1,0 +1,8 @@
+# Keeps the GitHub Actions used by the CI workflow current.
+# Ecosystems for individual projects are added to this file as further entries under updates, each pointing at that project's directory.
+version: 2
+updates:
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: monthly
